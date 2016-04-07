@@ -11,4 +11,4 @@ for ip in $(cat /proc/net/arp | grep -v IP|grep -v 0x0| awk '{print $1}'); do
     fi
 done
 echo $data
-curl 'http://123.56.154.0:8080/zrdm2x/router/data?key=hifiwifi_001&data='$data
+curl 'http://host/router/data?key=hifiwifi_001&data='$data
